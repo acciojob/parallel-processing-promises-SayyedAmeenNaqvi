@@ -1,1 +1,59 @@
 /*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Utility to hide elements */
+.hidden {
+    display: none !important;
+}
+
+/* --- Loading Spinner Styles --- */
+#loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    background-color: #f0f8ff;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-left-color: #007bff;
+    animation: spin 1s linear infinite;
+    margin-bottom: 5px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* --- Error Styles --- */
+#error {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* --- Output Container Styles --- */
+#output {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#output img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
